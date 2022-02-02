@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Unik.Template.Installer</id>
+    <version>1.0.0</version>
+    <authors>Unik.Template.Installer</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="Cake.Powershell" version="1.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.PowerShell.5.ReferenceAssemblies" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Ookii.Dialogs.Wpf" version="5.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Udv\Unik.Template.Installer\bin\Debug\net6.0-windows\Unik.Template.Installer.runtimeconfig.json" target="lib\net6.0-windows7.0\Unik.Template.Installer.runtimeconfig.json" />
+    <file src="C:\Udv\Unik.Template.Installer\bin\Debug\net6.0-windows\Unik.Template.Installer.dll" target="lib\net6.0-windows7.0\Unik.Template.Installer.dll" />
+  </files>
+</package>

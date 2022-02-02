@@ -1,0 +1,27 @@
+﻿<Window x:Class="Unik.Template.Installer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unik.Template.Installer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="387" Width="590" ResizeMode="NoResize" Icon="/unik_icon.png">
+    <Grid Background="#FF1F1F21" Margin="0,0,0,0">
+        <Button x:Name="createSolutionButton" Content="Create Solution" HorizontalAlignment="Left" Height="19" Margin="438,243,0,0" VerticalAlignment="Top" Width="117" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Click="createSolutionButton_Click"/>
+        <TextBox x:Name="companyTextBox" HorizontalAlignment="Left" Height="19" Margin="36,104,0,0" TextWrapping="Wrap" Text="Unik" VerticalAlignment="Top" Width="117" Background="#FFC1C1C1"/>
+        <TextBox x:Name="productTextBox" HorizontalAlignment="Left" Height="19" Margin="169,104,0,0" TextWrapping="Wrap" Text="Bolig" VerticalAlignment="Top" Width="117" Background="#FFC1C1C1"/>
+        <TextBox x:Name="areaTextBox" HorizontalAlignment="Left" Height="19" Margin="303,104,0,0" TextWrapping="Wrap" Text="Finance" VerticalAlignment="Top" Width="117" Background="#FFC1C1C1"/>
+        <TextBox x:Name="subAreaTextBox" HorizontalAlignment="Left" Height="19" Margin="438,104,0,0" TextWrapping="Wrap" Text="Finance Unit" VerticalAlignment="Top" Width="117" Background="#FFC1C1C1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="36,83,0,0" TextWrapping="Wrap" Text="Company" VerticalAlignment="Top" Width="117" Foreground="#FFC1C1C1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="168,83,0,0" TextWrapping="Wrap" Text="Product" VerticalAlignment="Top" Width="117" Foreground="#FFC1C1C1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="303,83,0,0" TextWrapping="Wrap" Text="Area" VerticalAlignment="Top" Width="117" Foreground="#FFC1C1C1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="438,83,0,0" TextWrapping="Wrap" Text="SubArea" VerticalAlignment="Top" Width="118" Foreground="#FFC1C1C1"/>
+        <TextBox x:Name="repositoryNameTextBox" HorizontalAlignment="Left" Height="19" Margin="36,243,0,0" TextWrapping="Wrap" Text="service-finance_unit-dotnet" VerticalAlignment="Top" Width="384" Background="#FFC1C1C1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="36,220,0,0" TextWrapping="Wrap" Text="Repository Name" VerticalAlignment="Top" Width="117" Foreground="#FFC1C1C1"/>
+        <Image HorizontalAlignment="Left" Height="33" Margin="36,29,0,0" VerticalAlignment="Top" Width="100" Source="/unik_logo.png"/>
+        <TextBox x:Name="installationPathLocalTextBox" HorizontalAlignment="Left" Height="19" Margin="36,0,0,0" TextWrapping="Wrap" Text="C:\Udv" VerticalAlignment="Center" Width="477" Background="#FFC1C1C1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="36,151,0,0" TextWrapping="Wrap" Text="Local Installation Path" VerticalAlignment="Top" Width="117" Foreground="#FFC1C1C1"/>
+        <Button x:Name="installationPathLocalButton" Content="..." HorizontalAlignment="Left" Height="19" Margin="531,0,0,0" VerticalAlignment="Center" Width="24" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Click="installationPathLocalButton_Click"/>
+
+    </Grid>
+</Window>
