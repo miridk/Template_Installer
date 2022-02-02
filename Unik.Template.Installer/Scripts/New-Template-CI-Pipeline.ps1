@@ -9,8 +9,12 @@
 # [string]$product = "Bolig";
 # [string]$area = "Finance";
 # [string]$microserviceName = "Inkasso Unit";
-# [string]$repoName = "service-test_unit-testdotnet234345687";
+# [string]$repoName = "service-test_unit-testdotssssssea";
 # [string]$installPath = "C:\Udv\Midlertidig";
+
+# dotnet new --install --force --no-update-check $PSScriptRoot\Unik.WebApi.Template.1.0.1.nupkg
+
+Copy-Item "$($PSScriptRoot)\Unik.WebApi.Template.1.0.1.nupkg" -Destination "C:\Users\$env:USERNAME\.templateengine\packages"
 
 
 [string]$subArea = $microserviceName.replace(' ', '')
@@ -19,20 +23,27 @@
 [string]$fullPath = "$($company).$($product).$($area).$($subArea)"
 # pause
 cd $installPath
-# mkdir $repoName
-git clone https://tfs.unik.dk/tfs/DefaultCollection/Bolig%20SaaS/_git/$($repoName)
+mkdir $repoName
+# git clone https://tfs.unik.dk/tfs/DefaultCollection/Bolig%20SaaS/_git/$($repoName)
 cd .\$($repoName)
-git checkout -b tfs/template
+# git checkout -b tfs/template
 
+
+Write-Host Press enter to install nuget
 # pause
-
 # Write-Host ***************** $PSScriptRoot
 
- 
-dotnet new --install "$PSScriptRoot\Unik.WebApi.Template.1.0.1.nupkg"
+# dotnet new --install "$PSScriptRoot\Unik.WebApi.Template.1.0.1.nupkg"
 # Write-Host "Log"
 dotnet new UnikWebApi -o $($fullPath)
-# pause
+
+
+Write-Host nuget packages are installed
+pause
+
+
+
+
 mkdir Build
   
 New-Item -Path . -Name ".\Build\$($Filename)-ci.yaml" -ItemType "file" -Value "name: $($subArea)-CI
