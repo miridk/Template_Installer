@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Udv\\Unik.Template.Installer\\Unik.Template.Installer.csproj": {}
+    "C:\\Udv\\Template_Installer\\Unik.Template.Installer\\Unik.Template.Installer.csproj": {}
   },
   "projects": {
-    "C:\\Udv\\Unik.Template.Installer\\Unik.Template.Installer.csproj": {
+    "C:\\Udv\\Template_Installer\\Unik.Template.Installer\\Unik.Template.Installer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Udv\\Unik.Template.Installer\\Unik.Template.Installer.csproj",
+        "projectUniqueName": "C:\\Udv\\Template_Installer\\Unik.Template.Installer\\Unik.Template.Installer.csproj",
         "projectName": "Unik.Template.Installer",
-        "projectPath": "C:\\Udv\\Unik.Template.Installer\\Unik.Template.Installer.csproj",
-        "packagesPath": "C:\\Users\\Michael Rinkovski\\.nuget\\packages\\",
-        "outputPath": "C:\\Udv\\Unik.Template.Installer\\obj\\",
+        "projectPath": "C:\\Udv\\Template_Installer\\Unik.Template.Installer\\Unik.Template.Installer.csproj",
+        "packagesPath": "c:\\udv\\nuget_packages",
+        "outputPath": "C:\\Udv\\Template_Installer\\Unik.Template.Installer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Michael Rinkovski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

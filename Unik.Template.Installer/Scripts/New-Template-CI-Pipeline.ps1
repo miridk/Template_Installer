@@ -9,7 +9,7 @@
 # [string]$product = "Bolig";
 # [string]$area = "Finance";
 # [string]$microserviceName = "Inkasso Unit";
-# [string]$repoName = "service-inkasso_unit-dotnetdddddd";
+# [string]$repoName = "service-test_unit-testdotnet234345687";
 # [string]$installPath = "C:\Udv\Midlertidig";
 
 
@@ -17,16 +17,22 @@
 [string]$Filename = $microserviceName.replace(' ', '_')
 
 [string]$fullPath = "$($company).$($product).$($area).$($subArea)"
-
+# pause
 cd $installPath
-      # mkdir $repoName
+# mkdir $repoName
 git clone https://tfs.unik.dk/tfs/DefaultCollection/Bolig%20SaaS/_git/$($repoName)
 cd .\$($repoName)
 git checkout -b tfs/template
 
-dotnet new --install .\Unik.WebApi.Template.1.0.1.nupkg
+# pause
+
+# Write-Host ***************** $PSScriptRoot
+
+ 
+dotnet new --install "$PSScriptRoot\Unik.WebApi.Template.1.0.1.nupkg"
+# Write-Host "Log"
 dotnet new UnikWebApi -o $($fullPath)
-  pause
+# pause
 mkdir Build
   
 New-Item -Path . -Name ".\Build\$($Filename)-ci.yaml" -ItemType "file" -Value "name: $($subArea)-CI

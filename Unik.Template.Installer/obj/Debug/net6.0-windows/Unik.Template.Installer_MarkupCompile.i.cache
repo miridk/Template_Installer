@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Udv\Unik.Template.Installer\obj\Debug\net6.0-windows\
+C:\Udv\Template_Installer\Unik.Template.Installer\obj\Debug\net6.0-windows\
 Unik.Template.Installer
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Udv\Unik.Template.Installer\App.xaml
+C:\Udv\Template_Installer\Unik.Template.Installer\App.xaml
 11407045341
 
 5-1914950474
-237-1608321378
+237-1478868216
 MainWindow.xaml;
 
-False
+True
 
